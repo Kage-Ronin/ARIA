@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --surface: #05070a;
+  --surface-1: #0b0f15;
+  --surface-2: #111720;
+  --rim: #e0e8f0;
+  --cyan: #00d4ff;
+  --cyan-dim: #0088aa;
+  --amber-voice: #ffaa33;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background: var(--surface);
+  color: var(--rim);
+  font-family: "Inter", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Thin scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+}
+
+/* Glass panel utility */
+.glass {
+  background: rgba(17, 23, 32, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
