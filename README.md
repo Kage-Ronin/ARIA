@@ -38,8 +38,6 @@ Built by **Sachin** using Google's Gemini Live API, FastAPI, Next.js, and pgvect
 |:---:|:---:|
 | ![Login](docs/screenshots/login.png) | ![Agent](docs/screenshots/agent-standby.png) |
 
-> **Add screenshots:** Save a screenshot of each page as `docs/screenshots/login.png` and `docs/screenshots/agent-standby.png`.
-
 ---
 
 ## Features
@@ -240,7 +238,7 @@ Place MP3 files in `frontend/public/` with these exact names:
 | `FRONTEND_URL` | `http://localhost:3000` | CORS allowed origin (no trailing slash) |
 | `ENV` | `development` | Set to `production` for stricter checks + secure cookies |
 | `PORT` | `8000` | Server port |
-| `LIVE_MODEL` | `gemini-2.0-flash-live-001` | Gemini Live model ID |
+| `LIVE_MODEL` | `gemini-3.1-flash-live-preview` | Gemini Live model ID |
 | `EMBEDDING_MODEL` | `gemini-embedding-001` | Embedding model ID |
 | `VOICE_NAME` | `Aoede` | Gemini voice name |
 | `MAX_LOGIN_ATTEMPTS` | `5` | Failed attempts before account lockout |
@@ -336,7 +334,7 @@ Set environment variables in the Vercel dashboard. Make sure `NEXT_PUBLIC_BACKEN
 
 | | Technology |
 |---|---|
-| **LLM** | Google Gemini 2.0 Flash Live |
+| **LLM** | Google Gemini 3.1 Flash Live Preview |
 | **Embeddings** | Google Gemini Embedding 001 |
 | **Vector DB** | PostgreSQL + pgvector |
 | **Backend** | FastAPI · SQLAlchemy 2.0 async · pydantic-settings |
