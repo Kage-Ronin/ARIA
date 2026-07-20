@@ -33,3 +33,4 @@ Thumbs.db
 
 # Claude Code session data
 .claude/
+pyproject.toml
